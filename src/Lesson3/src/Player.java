@@ -19,12 +19,14 @@ public class Player {
         double randomNum = Math.random() * 3;
 
         if (randomNum < 1) {
-            return STONE
+            return STONE;
         } else if (randomNum < 2) {
-            return SCISSORS
+            return SCISSORS;
         } else if (randomNum < 3) {
             return PAPER;
         }
+
+        return 0;
     }
 
     /**
@@ -32,7 +34,7 @@ public class Player {
      */
     public void notifyResult(boolean result) {
         if (result) {
-            this.winCount_++
+            this.winCount_++;
         }
     }
 
