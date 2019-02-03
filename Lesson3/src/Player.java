@@ -6,6 +6,10 @@ public class Player {
     private String name_;
     private int winCount_ = 0;
 
+    public Player(String name) {
+        this.name_ = name;
+    }
+
     /**
      * @return ジャンケンの手
      */
@@ -35,5 +39,9 @@ public class Player {
      */
     public int getWinCount() {
         return this.winCount_;
+    }
+
+    public String getName() {
+        return name_;
     }
 }
