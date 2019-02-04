@@ -16,7 +16,7 @@ public class Player {
     /**
      * @return ジャンケンの手
      */
-    public int showHand(Tactics tactics) {
+    public int showHand() {
         return tactics_.readTactics();
     }
 
